@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <style>
+        body {
+            margin: 0;
+            font-family: Arial, sans-serif;
+            min-height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            position: relative;
+            background-image: url('https://cdn.discordapp.com/attachments/1289647508984954891/1299816332606308382/image.png?ex=671e93cb&is=671d424b&hm=17f20d5424bec18653e9d720843ac4ed88cc0f52e21b01695b4bdb6f0c902c27&');
+            background-size: cover;
+            background-position: center;
+			
+        }
+        body::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            bottom: 0;
+            background: rgba(45, 27, 71, 0.8);
+            backdrop-filter: blur(5px);
+            -webkit-backdrop-filter: blur(10px);
+        }
+        .container {
+            background: rgba(30, 30, 30, 0.95);
+            border-radius: 25px;
+            padding: 35px;
+            width: 525px;
+            position: relative;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+            color: white;
+            border: 3px solid #8A2BE2;
+            box-shadow: 0 0 5px #8A2BE2;
+        }
+        .header {
+            text-align: center;
+            margin-bottom: 30px;
+			
+        }
+        .profile-img {
+            width: 140px;
+            height: 140px;
+            border-radius: 50%;
+            margin-bottom: 20px;
+            box-shadow: 0 5px 15px rgba(0, 0, 0, 0.4);
+            border: 2px solid rgba(255, 255, 255, 0.1);
+        }
+        .title {
+            font-size: 2.1em;
+            font-weight: bold;
+            color: white;
+            margin: 15px 0;
+            text-shadow: 0 0 10px rgba(255, 255, 255, 0.8);
+        }
+        .schedule-item {
+            display: flex;
+            justify-content: space-between;
+            padding: 14px 0;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+            font-size: 1.4em;
+        }
+        .day {
+            color: rgba(255, 255, 255, 0.7);
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.4);
+        }
+        .activity {
+            color: white;
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 255, 255, 0.6);
+        }
+        .pausa {
+            color: rgba(255, 0, 0, 1);
+            font-weight: bold;
+            text-shadow: 0 0 8px rgba(255, 0, 0, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="header">
+            <img src="https://yt3.googleusercontent.com/R6B1CaIVbJiRNwz-gqe4oQl1juG56YInv_gyTMyhVx11QW8Zpn6QcMfTQwFsINAcs54jBlm-_A=s160-c-k-c0x00ffffff-no-rj" alt="Profile" class="profile-img">
+            <div class="title">IN LIVE ALLE 20:45</div>
+        </div>
+        
+        <div class="schedule-item">
+            <span class="day">LUNEDÌ</span>
+            <span class="activity">LIVE - MINECRAFT PVP</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">MARTEDÌ</span>
+            <span class="activity">LIVE - MINECRAFT HARDCORE</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">MERCOLEDÌ</span>
+            <span class="activity">LIVE - MINECRAFT PVP</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">GIOVEDÌ</span>
+            <span class="pausa">PAUSA - IMPEGNI</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">VENERDÌ</span>
+            <span class="pausa">PAUSA - SONO FUORI</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">SABATO</span>
+            <span class="pausa">PAUSA - NORMALE</span>
+        </div>
+        <div class="schedule-item">
+            <span class="day">DOMENICA</span>
+            <span class="pausa">PAUSA - SONO FUORI</span>
+        </div>
+    </div>
+</body>
+</html>
